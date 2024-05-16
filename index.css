@@ -40,6 +40,7 @@ div {
     font-size: 2em;
     text-transform: uppercase;
     /* font-family:  sans-serif; */
+    z-index: 3;
 }
 .grid-1 img{
     width: 10em;
@@ -52,27 +53,45 @@ div {
     font-size: 1.5em;
     justify-self: end;
     margin-top: 0.5em;
+    z-index: 3;
 }
 .grid-3{
     grid-column: 1;
     grid-row:3;
     justify-self: start;
     align-self: end;
+    font-size: 1.3em;
+    z-index: 3;
 }
 .grid-4{
     grid-column: 3;
     grid-row: 3;
     justify-self: end;
     align-self: end;
+    font-size: 1.5em;
+    z-index: 3;
 }
 
 .issue-container{
     position: absolute;
+    /* background: ; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
 
+}
+.issue{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+.issue-container, 
+.issue{
+    height: 100vh;
+    width: 100vw;
+    background: #993939;
 }
 .issue img{
     height: 75vh;
@@ -87,4 +106,26 @@ div {
     font-size: 1.1em;
     font-weight: 900;
     
+}
+
+.issue-7{
+    background: #ff608c;
+}
+.issue-6{
+    background: #ffffff;
+}
+.issue-5{
+    background: #4cdbcc;
+}
+.issue-4{
+    background: #ff672b;
+}
+.issue-3{
+    background: #ffbf3f;
+}
+.issue-2{
+    background: #1533b8;
+}
+.issue-1{
+    background: #e70303;
 }

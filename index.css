@@ -5,7 +5,9 @@
 }
 
 body {
-    position: relative;
+    /* position: relative; */
+    /* display: flex-inline; */
+    /* flex-direction: column; */
     font-family:"futura-pt", Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     /* margin: 0; */
@@ -14,9 +16,11 @@ body {
     margin-bottom: auto;
     margin-right: auto;
     height: 100%;
-    transition: background 1s ease;
-   /* background: #3498db; */
+    
+   background: #ffffff;
+   transition: background .5s ease;
 } 
+
 div {
 }
 
@@ -73,19 +77,32 @@ div {
 }
 
 .issue-container{
-    position: absolute;
+    /* position: absolute; */
     /* background: ; */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
     text-align: center;
     overflow: auto;
     scroll-snap-type: y mandatory;
+    /* background-color: #ffffff; */
+    /* transition: background .2s ease; */
 
 }
 .issue{
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    /* position: absolute; */
+    /* top: -50vh; */
+    /* display: block; */
+    /* justify-content: center; */
+    z-index: 20;
+    /* align-items: center; */
+    /* position: absolute;    */
+    /* background: ; */
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /* scroll-snap-align: start; */
+    /* scroll-snap-stop: always; */
 }
 .issue-container, 
 .issue{
@@ -105,30 +122,28 @@ div {
 .issue p{
     font-size: 1.1em;
     font-weight: 900;
-    
 }
-
 .issue-7{
-    background: #ff608c;
+    /* background: #ff608c; */
     /* -webkit-transition: background 0.5s;
     transition: background 0.5s; */
     /* background: linear-gradient(to bottom, #ff608c #ffffff); */
 }
 .issue-6{
-    background: #ffffff;
+    /* background: #ffffff; */
 }
 .issue-5{
-    background: #4cdbcc;
+    /* background: #4cdbcc; */
 }
 .issue-4{
-    background: #ff672b;
+    /* background: #ff672b; */
 }
 .issue-3{
-    background: #ffbf3f;
+    /* background: #ffbf3f; */
 }
 .issue-2{
-    background: #1533b8;
+    /* background: #1533b8; */
 }
 .issue-1{
-    background: #e70303;
+    /* background: #e70303; */
 }

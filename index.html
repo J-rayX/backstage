@@ -42,7 +42,7 @@
 
 
         <div class="issue-container">
-            <div class="issue issue-7">
+            <div class="issue issue-7" data-background-color="#ff608c">
                 <img src="assets/issue_7.png" alt="">
                 <h5>Issue #7</h5>
                 <p><a href="#">BUY HERE</a> (Europe)</p>
@@ -52,7 +52,7 @@
 
             </div>
 
-            <div class="issue issue-6">
+            <div class="issue issue-6" data-background-color="#ffffff">
                 <img src="assets/issue_6.png" alt="">
                 <h5>Issue #7</h5>
                 <p><a href="#">BUY HERE</a> (Europe)</p>
@@ -62,7 +62,7 @@
 
             </div>
 
-            <div class="issue issue-5">
+            <div class="issue issue-5" data-background-color="#4cdbcc">
                 <img src="assets/issue_5.png" alt="">
                 <h5>Issue #7</h5>
                 <p><a href="#">BUY HERE</a> (Europe)</p>
@@ -72,7 +72,7 @@
 
             </div>
 
-            <div class="issue issue-4">
+            <div class="issue issue-4" data-background-color="#ff672b">
                 <img src="assets/issue_4.png" alt="">
                 <h5>Issue #7</h5>
                 <p><a href="#">BUY HERE</a> (Europe)</p>
@@ -82,7 +82,7 @@
 
             </div>
 
-            <div class="issue issue-3">
+            <div class="issue issue-3" data-background-color="#ffbf3f">
                 <img src="assets/issue_3.png" alt="">
                 <h5>Issue #7</h5>
                 <p><a href="#">BUY HERE</a> (Europe)</p>
@@ -92,7 +92,7 @@
 
             </div>
 
-            <div class="issue issue-2">
+            <div class="issue issue-2" data-background-color="#1533b8">
                 <img src="assets/issue_2.png" alt="">
                 <h5>Issue #7</h5>
                 <p><a href="#">BUY HERE</a> (Europe)</p>
@@ -102,7 +102,7 @@
 
             </div>
 
-            <div class="issue issue-1">
+            <div class="issue issue-1" data-background-color="#e70303">
                 <img src="assets/issue_1.png" alt="">
                 <h5>Issue #7</h5>
                 <p><a href="#">BUY HERE</a> (Europe)</p>
@@ -114,4 +114,31 @@
         </div>
     </div>
 </body>
+
+<script>
+//     $( window ).ready(function() {
+  
+//   var wHeight = $(window).height();
+
+//   $('.issue')
+//     .height(wHeight)
+//     .scrollie({
+//       scrollOffset : -50,
+//       scrollingInView : function(elem) {
+                 
+//         var bgColor = elem.data('background');
+        
+//         $('body').css('background-color', bgColor);
+        
+//       }
+//     });
+
+// });
+
+var $target = $('.issue-container');
+inView('.issue').on('enter', function(el){
+  var color = $(el).attr('data-background-color');
+  $target.css('background-color', color );
+});
+</script>
 </html>

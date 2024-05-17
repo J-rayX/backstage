@@ -45,7 +45,6 @@
             </div>
         </div>
     </div>
-    <!-- <div class="issue-container"> -->
         <div class="issue issue-7" id="issue7" data-background="#ff608c">
             <img src="assets/issue_7.png" alt="">
             <h5>Issue #7</h5>
@@ -91,44 +90,23 @@
         <div class="issue issue-1" id="issue1" data-background="#e70303">
             <img src="assets/issue_1.png" alt="">
             <h5>Issue #1</h5>
-            <p><a href="#">BUY HERE</a>s</p>
+            <p><a href="#">BUY HERE</a></p>
             <p>or in selected stores</p>
-
-
         </div>
-    <!-- </div> -->
 </body>
 
 <script>
-// var $target = $('body');
-// inView('issue').on('enter', function(el){
-//   var color = $(el).attr('data-background-color');
-//   console.log(color);
-//   $target.css('background-color', color );
-// //   console.log($target.css('background-color'))
-// });
-
-
-
-    $( window ).ready(function() {
-  
-  var view = $(window).height();
-
-  $('.issue')
+$( window ).ready(function() {
+    var view = $(window).height();
+    $('.issue')
     .height(view)
     .scrollie({
-      scrollOffset : -50,
-      scrollingInView : function(elem) {
-        console.log("Here");
-        var bgColor = elem.data('background');
-        console.log(bgColor)
-        
-        $('body').css('background-color', bgColor);
-        
-      }
+        scrollOffset : -50,
+        scrollingInView : function(elem) {
+            var bgColor = elem.data('background');
+            $('body').css('background-color', bgColor);
+        }
     });
-
 });
-
 </script>
 </html>

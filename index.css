@@ -142,7 +142,7 @@ body {
         margin-left: 0;
         margin-right: 0;
         margin-left: auto;
-        margin-left: auto;
+        /* margin-left: auto; */
 
     }
     /* .flexbox-container {
@@ -172,18 +172,22 @@ body {
         bottom: 0;
         justify-self: start;
         align-self: none;
-        font-size: 1em;
+        margin-top: 0vh;
+        font-size: 1.3em;
+        text-align: center;
         z-index: 3;
     }
     .grid-3{
         position:relative;
         width: 100%;
         text-wrap:wrap;
-        justify-self: start;
-        align-self: start;
-        font-size: 0.9em;
+        justify-self: center;
+        text-align: center;
+        /* align-self: center; */
+        font-size: 1.5em;
         margin-right: 0em;
         margin-left: 0em;
+        margin-top: 0vh;
         left: 0;
         right: 0;
         z-index: 3;
@@ -216,10 +220,12 @@ body {
         scroll-snap-stop: none; 
         align-items: none;
         text-align: none;
-        margin-bottom: 0vh;
+        margin-bottom: -20vh;
+        margin-top: 0;
+        padding-bottom: 0;
     }
     .issue img{
-        margin-bottom: -0vh;
+        margin-bottom: 2vh;
         top: 0vh;
         height: 65vh;
         width: 50vh;
@@ -228,12 +234,14 @@ body {
     .issue h5{
         font-size: 1.4em;
         margin: 0.2em 0;
+        padding: 0.2em;
     }
     .issue p{
-        padding: 0;
+        padding: 0.4em 0;
         margin: 0 2em;
         font-size: 1.2em;
         font-weight: 800; 
+        margin-bottom: 0;
 
     }
     .issue p > a{
@@ -246,6 +254,3 @@ body {
     
 }
 
-@media screen and (max-width: 2560) {
-    
-}

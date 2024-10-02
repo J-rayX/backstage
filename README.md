@@ -5,6 +5,7 @@ A modern, interactive web archive for Backstage, a contemporary cosmopolitan mag
 <div align="center">
 
 ![Project Preview](/assets/backstage-done.gif)
+![Project Screenshot](/assets/backstage-screenshot.png)
 
 [View Live Demo](https://backstage-jade.vercel.app/) | [Report Bug](https://github.com/j-rayx/backstage/issues) | [Request Feature](https://github.com/j-rayx/backstage/issues)
 
@@ -16,12 +17,12 @@ A modern, interactive web archive for Backstage, a contemporary cosmopolitan mag
 - 📏 **CSS Scroll Snap** - Precise, controlled scrolling between sections
 - 🎨 **Dynamic Color Palette**
   ```
-  Teal   (#00c1b5) ██████
-  Orange (#ff651a) ██████
-  Yellow (#ffbe00) ██████
-  Blue   (#1d3fbb) ██████
-  Red    (#e30512) ██████
-  Pink   (#ff608c) ██████
+  Teal   (#00c1b5) 
+  Orange (#ff651a) 
+  Yellow (#ffbe00) 
+  Blue   (#1d3fbb)
+  Red    (#e30512) 
+  Pink   (#ff608c)
   ```
 - 📱 **Responsive Design** - Adapts smoothly from desktop to mobile
 - 📍 **Fixed Content Positioning** - Key elements remain accessible while scrolling
